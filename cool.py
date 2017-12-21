@@ -1,6 +1,12 @@
-temperature = 115  
-while temperature > 112: # first while loop code
-    print(temperature)
-    temperature = temperature - 1
+"""how to use while"""
+
+from time import sleep
+
+TEMPERATURE = 115
+DELAY_TIME = 1
+while TEMPERATURE > 90: # first while loop code
+    print(TEMPERATURE)
+    TEMPERATURE = TEMPERATURE - 1
+    sleep(DELAY_TIME) # be cool too fast to like reality
 
 print('The tea is cool enough.')
