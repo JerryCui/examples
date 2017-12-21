@@ -1,6 +1,7 @@
 ''' if-else statement example (recommending clothing)'''
 
-def main():    
+def main():
+    """clothes main """
     temperature = float(input('What is the temperature? '))
     if temperature > 70:
         print('Wear shorts.')
