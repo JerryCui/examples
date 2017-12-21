@@ -2,9 +2,10 @@
 using a loop.
 '''
 
-from graphics import *
+from graphics import GraphWin, Point, Line, Circle
 
 def main():
+    """just main func"""
     win = GraphWin('Balloons', 200, 300)
     win.yUp() # right side up coordinates
 
@@ -14,8 +15,8 @@ def main():
         line = Line(base, center)
         line.draw(win)
         balloon = Circle(center, 40)
-        balloon.setOutline('red')
-        balloon.setFill('pink')
+        balloon.setOutline('yellow') # i like yellow
+        balloon.setFill('green') # i like green
         balloon.draw(win)
 
     win.promptClose(win.getWidth()/2, 20)

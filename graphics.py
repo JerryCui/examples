@@ -152,9 +152,9 @@ http://mcsp.wartburg.edu/zelle/python for a quick reference"""
 import time, os, sys
 
 try:  # import as appropriate for 2.x vs. 3.x
-   import tkinter as tk
+    import tkinter as tk
 except:
-   import Tkinter as tk
+    import Tkinter as tk
 
 
 ##########################################################################
@@ -177,7 +177,6 @@ def update():
 
 ############################################################################
 # Graphics classes start here
-        
 class GraphWin(tk.Canvas):
 
     """A GraphWin is a toplevel window for displaying graphics."""
@@ -189,7 +188,7 @@ class GraphWin(tk.Canvas):
         tk.Canvas.__init__(self, master, width=width, height=height)
         self.master.title(title)
         self.pack()
-        master.resizable(0,0)
+        master.resizable(0, 0)
         self.foreground = "black"
         self.items = []
         self.mouseX = None
@@ -352,7 +351,6 @@ class GraphWin(tk.Canvas):
 class Transform:
 
     """Internal class for 2-D coordinate transformations"""
-    
     def __init__(self, w, h, xlow, ylow, xhigh, yhigh):
         # w, h are width and height of window
         # (xlow,ylow) coordinates of lower-left [raw (0,h-1)]
