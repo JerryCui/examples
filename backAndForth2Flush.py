@@ -4,8 +4,8 @@ This version replaces moveAllOnLine by moveAllOnLineFlush,
 to only update thescreen once for each animation step,
 after multiple individual graphics instructions are given.'''
 
-from graphics import *
 import time
+from graphics import *
 
 def moveAll(shapeList, dx, dy):
     ''' Move all shapes in shapeList by (dx, dy).'''   
