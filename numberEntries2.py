@@ -5,3 +5,5 @@ number = 1
 for item in items:
     print(number, item)
     number = 2 # will change to 2 after printing 1
+
+    print('hello world')
