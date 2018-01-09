@@ -18,9 +18,14 @@ def safeWholeNumber(prompt):
     5
     '''
     
-    wholenum1 = int(input(prompt))
+    wholenum1 = input(prompt)
+    try:
+            int(wholenum1)
+    except (ValueError, TypeError):
+            print("Error!  Enter the number of people:", wholenum1)
+            return False
 
-    return wholenum1 # change: this is just to make the stub runnable
+    return int(wholenum1) # change: this is just to make the stub runnable
 
 
 def safeInt(prompt):

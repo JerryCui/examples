@@ -10,6 +10,12 @@ def savingGrowth(deposit, interestPercentage, goal):
     Year 3: $125.97
     '''
     # code here!
+    year_count = 0
+    while deposit <= goal:
+        deposit = deposit*(1 + interestPercentage/100)
+        print("Year ", year_count, "$%.2f"%deposit)
+        year_count = year_count + 1
+
 
 
     
