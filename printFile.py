@@ -4,5 +4,6 @@
 
 inFile = open('sample3.txt', 'r')
 contents = inFile.read()
+inFile.close()
 print(contents)
 

@@ -17,8 +17,10 @@ def safeWholeNumber(prompt):
     Enter the number of dogs: 5
     5
     '''
+    
+    wholenum1 = int(input(prompt))
 
-    return 0 # change: this is just to make the stub runnable
+    return wholenum1 # change: this is just to make the stub runnable
 
 
 def safeInt(prompt):
@@ -26,23 +28,23 @@ def safeInt(prompt):
     This is the same idea as safeWholeNumber, except the integer string may
     be negative.
     '''
-
-    return 0 # change: this is just to make the stub runnable
+    int_input = input(prompt)
+    return int_input  # change: this is just to make the stub runnable
 
 def safeDecimal(prompt):
     '''Prompt the user to enter a decimal, and return the first legal float
     value. This is the same idea as safeWholeNumber, except the
     decimal string may start with a '-' and contain one '.'
     '''
-
-    return 0.0 # change: this is just to make the stub runnable
+    decimalnum = input(prompt)
+    return decimalnum  # change: this is just to make the stub runnable
 
 def main():
     print('Mess this up to test!')
 
     x = safeWholeNumber('Enter whole number: ')
     y = safeWholeNumber('Enter whole number: ')
-    print('The sum is', x+y)
+    print('The sum is', x + y)
 
     x = safeInt('Enter integer: ')
     y = safeInt('Enter integer: ')
@@ -53,7 +55,3 @@ def main():
     print('The sum is', x+y) # should be right after you fill in safeDecimal
 
 main()    
-
-
-    
-    
