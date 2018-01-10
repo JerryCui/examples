@@ -11,6 +11,10 @@ def tripleAll(nums):
     -18
     '''
     # code here
+    for item in nums:
+        tripleitems = 3*item
+        printout = '{} s triple is {}'.format(item, tripleitems)
+        print(printout)
     
       
     
