@@ -35,7 +35,6 @@ def main():
                               '0', 'Second Number:', win)
      
     win.getMouse()  # To know the user is finished with the text.
-    "python.autoComplete.preloadModules": [],
 
     num1 = int(entry1.getText())
     num2 = int(entry2.getText())

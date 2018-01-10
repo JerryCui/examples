@@ -3,11 +3,12 @@
 
 from graphics import *
 import time
+import threading
 
 def moveOnLine(shape, dx, dy, repetitions, delay):
-    for i in range(repetitions):
+    #for i in range(repetitions):
         shape.move(dx, dy)
-        time.sleep(delay)
+        #time.sleep(delay)
         
 
 def main():
@@ -26,8 +27,18 @@ def main():
     cir2.setFill("red")
     cir2.draw(win)
 
-    moveOnLine(cir1, 5, 0, 46, .05)
-    moveOnLine(cir1, -5, 0, 46, .05)
+    for i in range(92):
+        if i > 46:
+            moveOnLine(cir1, -5, 0, 46, .05)
+            moveOnLine(cir2, 2, 0, 46, .05)
+            moveOnLine(rect, 0, -3, 46, .05)
+
+        if i < 46:
+            moveOnLine(cir1, 5, 0, 46, .05)
+            moveOnLine(cir2, -2, 0, 46, .05)
+            moveOnLine(rect, 0, 3, 46, .05)
+
+        time.sleep(.05)
 
     win.promptClose(win.getWidth()/2, 20)
 

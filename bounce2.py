@@ -11,7 +11,7 @@ def bounceInBox(shape, dx, dy, xLow, xHigh, yLow, yHigh, win):
     its center reaches the low and high x and y coordinates.
     The animation stops when the mouse is clicked.'''
     
-    delay = .001
+    delay = .01
     while win.checkMouse() == None:  
         shape.move(dx, dy)
         center = shape.getCenter()

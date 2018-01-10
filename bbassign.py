@@ -41,6 +41,7 @@ def main(PROJECT_PREFIX):
 if __name__ == '__main__':
     import sys
     if len(sys.argv) != 2: # sys.argv lists command line parameters
+        print(len(sys.argv))
         print("""
 Usage:  bbassign.py assignmentName
      Move all files in the current directory starting with a blank-converted
@@ -55,5 +56,6 @@ Usage:  bbassign.py assignmentName
      In that case check the prefix on all the zip file contents and make the
      program parameter be the actual assignment prefix used.""")
     else:
-        main(sys.argv[1]) # sys.argv[0] is the program being run
-    
+        print(sys.argv[0]) # sys.argv[0] is the py file name 
+        main(sys.argv[1]) # sys.argv[0] is the program being run; 
+
