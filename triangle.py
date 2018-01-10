@@ -6,7 +6,7 @@ with prompts in a Text object and feedback via mouse clicks.
 from graphics import *
 
 def main():
-    win = GraphWin('Draw a Triangle', 350, 350)
+    win = GraphWin('A Triangle', 350, 350)
     win.yUp() # right side up coordinates
     win.setBackground('yellow')
     message = Text(Point(win.getWidth()/2, 30), 'Click on three points')
@@ -27,7 +27,7 @@ def main():
     # Use Polygon object to draw the triangle
     triangle = Polygon(vertices)
     triangle.setFill('gray')
-    triangle.setOutline('cyan')
+    triangle.setOutline('red')
     triangle.setWidth(4)  # width of boundary line
     triangle.draw(win)
 
