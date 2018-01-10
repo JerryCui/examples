@@ -15,7 +15,8 @@ def main():
     hours = float(input('Enter hours worked: '))
     wage = float(input('Enter dollars paid per hour: '))
     total = calcWeeklyWages(hours, wage)
-    print('Wages for {hours} hours at ${wage:.2f} per hour are ${total:.2f}.'
-          .format(**locals()))
+    print_info = 'Wages for {hours} hours at ${wage:.2f} per hour are ${total:.2f}.'.format(hours = hours, wage = wage, total = total)
+    print(print_info)
+          #.format(**locals()))
 
 main()
